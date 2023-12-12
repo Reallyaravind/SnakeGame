@@ -60,8 +60,8 @@ function drawFood() {
 function generateFood() {
   var x = Math.floor(Math.random() * gridSize) + 1;
   var y = Math.floor(Math.random() * gridSize) + 1;
-  for(var i=0;i<snake.length;i++){
-    if (snake[i][x]===x && snake[i][y]===y ){
+  for(var i=0; i<snake.length; i++){
+    if (snake[i].x === x && snake[i].y === y) {
       x = Math.floor(Math.random() * gridSize) + 1;
       y = Math.floor(Math.random() * gridSize) + 1;
       i=-1;
