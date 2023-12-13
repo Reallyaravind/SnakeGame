@@ -94,8 +94,9 @@ body,
   .controls button {
     padding: 25px 0;
     text-align: center;
+    border-radius: 20%;
     font-size: 1.3rem;
-    color: #B8C6DC;
+    color: #000000;
     width: calc(100% / 4);
     cursor: pointer;
     border-right: 1px solid #171B26;
