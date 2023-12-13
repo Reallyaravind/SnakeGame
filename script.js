@@ -123,6 +123,23 @@ function startGame() {
     draw();
   }, gameSpeedDelay);
 }
+// keypress event listner for the mobile buttons
+function handleKeyPressmobile(event) {
+    switch (event) {
+    case 'ArrowUp':
+        direction = 'up';
+        break;
+    case 'ArrowDown':
+        direction = 'down';
+        break;
+    case 'ArrowLeft':
+        direction = 'left';
+        break;
+    case 'ArrowRight':
+        direction = 'right';
+        break;
+    }
+}
 
 // Keypress event listener
 function handleKeyPress(event) {
