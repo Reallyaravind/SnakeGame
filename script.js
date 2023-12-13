@@ -14,6 +14,11 @@ let gameInterval;
 let gameSpeedDelay = 200;
 let gameStarted = false;
 
+document.addEventListener('touchstart', () => {
+  if (!gameStarted) {
+    startGame();
+  }
+});
 // Draw game map, snake, food
 function draw() {
   board.innerHTML = '';
